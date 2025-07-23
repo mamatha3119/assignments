@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="SauceDemoSuite">
+<test name="LoginAssertionsTest">
+        <classes>
+            <class name="saucedemo.test">
+                <methods>
+                    <include name="loginWithValidCredentials_verifyURLAndInventoryVisibility"/>
+                    <include name="login_verifyURLPass_butInventoryVisibilityFails"/>
+                    <include name="loginWithWrongAssertions_failBothChecks"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="VerifyLoginButtonTextAndColor">
+        <classes>
+            <class name="saucedemo.test">
+                <methods>
+                    <include name="testLoginButtonTextAndColor"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="VerifyCartBadgeCountAfterAddingItems">
+        <classes>
+            <class name="saucedemo.test">
+                <methods>
+                    <include name="verifyCartBadgeCount"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
+    
+
+
+
+
+
+
+
+
+
+
+    

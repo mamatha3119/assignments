@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="test.AddToCartTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="TC_verifyCart"/>
+          <include name="TC_addToCartButtonUI"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.AddToCartTest -->
+      <class name="test.menunavigation">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testLogoutFromMenu"/>
+        </methods>
+      </class> <!-- test.menunavigation -->
+      <class name="test.logintest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="TC_02verifyLogin"/>
+          <include name="TC_04verifyUsernameAndPasswordInput"/>
+          <include name="TC_01VerifyLogin"/>
+        </methods>
+      </class> <!-- test.logintest -->
+      <class name="test.checkoutnavigation">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testCancelButtonReturnsToInventoryPage"/>
+        </methods>
+      </class> <!-- test.checkoutnavigation -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

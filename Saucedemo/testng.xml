@@ -1,0 +1,67 @@
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <classes>
+  <class name = "test.BaseTest">
+  <modules>
+  <include name ="setup"/>
+  </modules>
+  </class>
+  <class name = "test.logintest">
+  <modules>
+  <include name = "TC_verifyLoginFieldsAreEnabled"/>
+  <include name = "TC_01VerifyLogin"/>
+  <include name = "TC_02verifyLogin"/>
+  <include name = "TC_03verifyLogin"/>
+  <include name = "TC_04verifyUsernameAndPasswordInput"/>
+  <include name = "testInvalidLogin"/>
+  <include name = "testValidLogin"/>
+  <include name = "TC_loginPopupWait"/>
+  </modules>
+  </class>
+  <class name = "test.InventoryTest">
+  <modules>
+  <include name = "testAddToCartButtonFunctionality"/>
+  <include name = "testAllProductsAreVisible"/>
+  <include name = "testInventoryPageLoads"/>
+  <include name = "testProductDetailsAreVisible"/>
+  <include name = "testProductSortDropdown"/>
+  <include name = "TC_productCard"/>
+  </modules>
+  </class>
+  <class name = "test.AddToCartTest">
+  <modules>
+  <include name = "TC_addToCartButtonUI"/>
+  <include name = "testAddMultipleItemsToCart"/>
+  <include name = "testAddSingleItemToCart"/>
+  <include name = "clickCheckout"/>
+  <include name = "TC_verifyCart"/>
+  </modules>
+  </class>
+  <class name = "test.cartinteractiontest">
+  <modules>
+  <include name = "testCartAndContinueShoppingButtons"/>
+  <include name = "testCheckoutButtonNavigatesToStepOne"/>
+  <include name = "testRemoveItemFromCart"/>
+  </modules>
+  </class>
+  <class name = "test.CheckoutInformationTest">
+  <modules>
+  <include name = "testValidCheckoutInformation"/>
+  </modules>
+  </class>
+  <class name = "test.checkoutnavigation">
+  <modules>
+  <include name = "testCancelButtonReturnsToInventoryPage"/>
+  <include name = "testContinueButtonTakesToOverviewPage"/>
+  </modules>
+  </class>
+  <class name = "test.menunavigation">
+  <modules>
+  <include name = "testBackToHomeButtonAfterCheckout"/>
+  <include name = "testLogoutFromMenu"/>
+  <include name = "testMenuItemsVisibilityAndNavigation"/>
+  </modules>
+  </class>
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
